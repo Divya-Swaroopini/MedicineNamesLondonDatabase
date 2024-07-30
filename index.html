@@ -33,7 +33,7 @@
                 const formData = new FormData();
                 formData.append('audio', audioBlob, 'response.wav');
                 
-                await fetch('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL', {
+                await fetch('https://script.google.com/macros/s/AKfycbzS7bUff0rOHORiIo2KjmA9MxF6gRKjOBUKoR0KKOI4-D99683trInLo_5JScOUu0N0kA/exec', {
                     method: 'POST',
                     body: formData
                 }).then(response => response.text())
